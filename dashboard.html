@@ -1,0 +1,74 @@
+<div class="navbar">
+  <div class="logo">Emotion AI</div>
+
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="dashboard.html">Dashboard</a></li>
+    <li><a href="detection.html">Detect</a></li>
+  </ul>
+
+  <button class="toggle-btn" onclick="toggleDarkMode()">🌙</button>
+</div>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+<div class="container">
+
+  <h1 class="title">Dashboard Overview</h1>
+
+  <!-- STATS -->
+  <div class="dashboard">
+
+    <div class="card">
+      <h3>😊 Happy</h3>
+      <p id="happyCount">0</p>
+    </div>
+
+    <div class="card">
+      <h3>😢 Sad</h3>
+      <p id="sadCount">0</p>
+    </div>
+
+    <div class="card">
+      <h3>😐 Neutral</h3>
+      <p id="neutralCount">0</p>
+    </div>
+
+  </div>
+
+  <!-- GRAPH -->
+  <canvas id="emotionChart"></canvas>
+
+  <!-- BUTTON -->
+  <div style="text-align:center; margin-top:30px;">
+    <a href="detection.html">
+      <button>Start Detection</button>
+    </a>
+  </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="js/dashboard.js"></script>
+
+</body>
+
+
+
+
+<script src="js/dashboard.js"></script>
+
+</body>
+</html>
+<div class="container">
+  <h2>Emotion Dashboard</h2>
+  <p>Your detected emotions over time:</p>
+
+  <ul id="history"></ul>
+</div>
